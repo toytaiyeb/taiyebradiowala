@@ -2,12 +2,30 @@
   margin:0%;
   padding: 0%;
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 html,body{
   height: 100%;
   width: 100%;
 } 
+#cursor{
+  height: 20px;
+  width: 20px;
+  background-color: rgba(255, 255, 255, 0.658);
+  border-radius: 50%;
+  position:fixed;
+}
+#cursor-b{
+  height: 200px;
+  width:200px;
+  background-color: rgba(255, 255, 255, 0.658);
+  border-radius: 50%;
+  position:fixed;
+
+  
+  filter: blur(130px);
+
+}
 
 #loader{
   position: absolute;
@@ -15,7 +33,7 @@ html,body{
   height:100vh ;
   background-color:rgb(0, 0, 0);
   color: rgba(255, 255, 255, 0.945);
-  z-index: 1;
+  z-index: 3;
 }
 #loader .reveal{
   display: block;
@@ -23,7 +41,7 @@ html,body{
   top:50%;
   left: 50%;
   transform:translate(-50%,-50%);
-  font-size: 6vw;
+  font-size: 5vw;
   font-weight: 700;
   width:max-content;
   
@@ -53,7 +71,7 @@ html,body{
   top: 300px; 
   height: 0;
   background-color: #14ff16;
-  z-index: 1;
+  z-index: 3;
   overflow: hidden;
 }
 
@@ -73,7 +91,8 @@ html,body{
   font-size: 12px;
   color: rgba(255, 255, 255, 0.945);
   position: relative;
-
+  z-index: 1;
+ 
 }
 #nav a .line{
   display: inline-block;
@@ -88,6 +107,7 @@ html,body{
 }
 #nav a:hover .line{
   width: 0;
+  
 }
 
 #container3D {
@@ -101,57 +121,67 @@ canvas{
   display: inline-block;
   height: 100px;
   width: 300px;
- 
+  z-index: 1;
 }
 
 #home{
+  
   height: 200vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.911);
 }
-/* .row{
-  margin-top: 2vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  color: #ffffff;
-  padding: 0 7vw;
 
-  padding-right: 6vw;
 
-} */
 
-path, polyline{
-  stroke:#14ff16;
-}
 #mainhome{
   flex-direction: row;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  color: #ffffff;
+  color:rgba(255, 255, 255, 0.945);
   padding: 0 4vw;
   /* line-height: 1; */
   padding-right: 3vw;
+  margin-top: 3vw;
+  
 }
 #left{
   width: 56vw;
   height: 100vh;
   flex-direction: column;
+  padding-left: 4vw;
+  z-index: 1;
+  
 
 }
 #right{
   width: 44vw;
   height: 100vh;
+ 
+  
 }
 .rows h1{
   font-size: 8vw;
   font-weight: 500;
+  
 }
+
 .rows svg{
   padding-left: 7vw;
   height: 14vw;
-  color:#14ff16;
+  
+}
+path, polyline{
+  stroke:#14ff16;
+}
+.rows svg:hover path {
+  stroke: #8bfa8d;
+}
+.rows svg:hover polyline{
+  stroke: #8bfa8d;
+  
+}
+.rows h1:hover h1{
+  color: #8bfa8d;
 }
