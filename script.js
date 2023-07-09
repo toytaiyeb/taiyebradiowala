@@ -1,13 +1,13 @@
-let crsr=document.querySelector("#cursor")
-let crsr_b=document.querySelector("#cursor-b")
+// let crsr=document.querySelector("#cursor")
+// let crsr_b=document.querySelector("#cursor-b")
 
-document.addEventListener("mousemove",function(dets){
-    crsr.style.left=dets.x+"px"
-    crsr.style.top=dets.y+"px"
-    crsr_b.style.left=dets.x-100+"px"
-    crsr_b.style.top=dets.y-100+"px"
+// document.addEventListener("mousemove",function(dets){
+//     crsr.style.left=dets.x+"px"
+//     crsr.style.top=dets.y+"px"
+//     crsr_b.style.left=dets.x-100+"px"
+//     crsr_b.style.top=dets.y-100+"px"
 
-})
+// })
 
 
 
@@ -34,6 +34,13 @@ function loaderAnimation(){
     var tl=gsap.timeline();
 
 tl
+  
+    .to("#loader .parent .child",{
+        y:"-100%",
+        duration:1.5,
+        delay:.6,
+        ease:Circ.easeInOut,
+    })
     .from("#loader .child span",{
         y:"100%",
         duration:1,
@@ -42,12 +49,6 @@ tl
         ease:Power3.easeInOut,
     })
    
-    .to("#loader .parent .child",{
-        y:"-100%",
-        duration:1,
-        delay:.6,
-        ease:Circ.easeInOut,
-    })
     .to("#green",{
         height:"100%",
         top:0,
@@ -80,7 +81,7 @@ function svgAnimation(){
         
         gsap.to("#Visual>g>g>path, #Visual>g>g>polyline",{
             strokeDashoffset:0,
-            duration:3.5,
+            duration:4.5,
             ease:Expo.Circ,
             delay:4
         })
@@ -117,9 +118,17 @@ function textSequence(i) {
 
 }
 
+function locoInit(){
+    const scroll = new LocomotiveScroll({
+        el: document.querySelector('#home'),
+        smooth: true
+        
+    });
+}
 
 revelToSpan()
 loaderAnimation()
 svgAnimation()
 // changeWords()
 textSequence(0)
+locoInit()
