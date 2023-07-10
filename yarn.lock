@@ -2,6 +2,42 @@
 # yarn lockfile v1
 
 
+"@detector-js/core@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@detector-js/core/-/core-0.0.6.tgz#825d0ca2fe4b13d0b7f7faa083a7b301cbf8711e"
+  integrity sha512-giNolNd1NVnbaDfGltBPOreONjEh8uMheG6lDSQ8Sg0Bqzdnjie8Fqe+9zZ62pFiFnCPXHqXNQ3S3lGQPN159Q==
+
+"@detector-js/detector@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@detector-js/detector/-/detector-0.0.7.tgz#5e98815115c1f6b3abba5ea1c4396301afaf9cc1"
+  integrity sha512-tWuQNma1XX7de1e6dXkugT4hqzAXhJOHTq5hJLjFztj4vyboSG7w5iFqOI3J+R8prZ1Jbozjl/fuF6zXABkuRQ==
+  dependencies:
+    "@detector-js/core" "^0.0.6"
+    "@detector-js/feature" "^0.0.6"
+    "@detector-js/hardware" "^0.0.6"
+    "@detector-js/software" "^0.0.7"
+
+"@detector-js/feature@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@detector-js/feature/-/feature-0.0.6.tgz#0a9f6a8c17d66236633da95961ca76f301035d73"
+  integrity sha512-C8VPgncjv8QzOfnz260YDJI0xbMPq5Wh4366gd6qsYO5uaR+WJ6h4jm9HucLXnf0dWp+BHXMletFZnGPtnUfOQ==
+  dependencies:
+    "@detector-js/core" "^0.0.6"
+
+"@detector-js/hardware@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@detector-js/hardware/-/hardware-0.0.6.tgz#3667436418af215af95dfae0aecb05fad3f60512"
+  integrity sha512-1z9ihh6pzu2ATrY4Lyhc/dTidtDKiVOpXP0p+YptoB1xtyzvU7CAbKIgxHYzBY8sMR7EHfOigcEK2Gj11iWj8g==
+  dependencies:
+    "@detector-js/core" "^0.0.6"
+
+"@detector-js/software@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@detector-js/software/-/software-0.0.7.tgz#985e9c26e8f3548d2db21b04f8f19188c973a0a1"
+  integrity sha512-eB+L4ZUhQoK7Rg+I6nZm8z2Xx75RmlyYlsS41s3IylKFBpDjOWl/8/cwWcL1P3hijIFdKVi5Rb/yOG73VM40NA==
+  dependencies:
+    "@detector-js/core" "^0.0.6"
+
 "@esbuild/android-arm64@0.17.19":
   version "0.17.19"
   resolved "https://registry.yarnpkg.com/@esbuild/android-arm64/-/android-arm64-0.17.19.tgz#bafb75234a5d3d1b690e7c2956a599345e84a2fd"
@@ -111,6 +147,27 @@
   version "0.17.19"
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.17.19.tgz#8cfaf2ff603e9aabb910e9c0558c26cf32744061"
   integrity sha512-lAhycmKnVOuRYNtRtatQR1LPQf2oYCkRGkSFnseDAKPl8lu5SOsK/e1sXe5a0Pc5kHIHe6P2I/ilntNv2xf3cA==
+
+cannon@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/cannon/-/cannon-0.6.2.tgz#1e7bc72dd5841982f3c104c2bc578bfa4fb1c572"
+  integrity sha512-n/7wWSXr8KOSvjad2x0fJHgpMepKjOKi+NdSnjfYyijoDBZnp4JQKgPcpv28jlXoWM+N9zVYU09J0A6Qxx+Y7w==
+
+detect-browser@^5.3.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/detect-browser/-/detect-browser-5.3.0.tgz#9705ef2bddf46072d0f7265a1fe300e36fe7ceca"
+  integrity sha512-53rsFbGdwMwlF7qvCt0ypLM5V5/Mbl0szB7GPN8y9NCcbknYOeVVXdrXEq+90IwAfrrzt6Hd+u2E2ntakICU8w==
+
+detector-js@^2.0.11:
+  version "2.0.11"
+  resolved "https://registry.yarnpkg.com/detector-js/-/detector-js-2.0.11.tgz#fbd00089fb2213629f7e338714f0e5c9b89fc0e4"
+  integrity sha512-tY/C3qIFtKf3srzVNq8M2amTSpObGJJ9m07NCfiuRFaQgLu1zX7gNT320VhJqEQkVHjAVpFHbICMBZshuKU2GQ==
+  dependencies:
+    "@detector-js/core" "^0.0.6"
+    "@detector-js/detector" "^0.0.7"
+    "@detector-js/feature" "^0.0.6"
+    "@detector-js/hardware" "^0.0.6"
+    "@detector-js/software" "^0.0.7"
 
 esbuild@^0.17.5:
   version "0.17.19"
