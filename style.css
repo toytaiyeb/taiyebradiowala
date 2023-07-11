@@ -24,15 +24,16 @@ html,body{
   height: 100%;
   width: 100%;
 } 
-/* #cursor{
+ /* #cursor{
   height: 20px;
   width: 20px;
   background-color: rgba(255, 255, 255, 0.658);
   border-radius: 50%;
   position:fixed;
   
-}
-#cursor-b{
+  
+} */
+/* #cursor-b{
   height: 200px;
   width:200px;
   background-color: rgba(255, 255, 255, 0.658);
@@ -41,7 +42,7 @@ html,body{
   filter: blur(130px);
 
 }
-*/
+*/ */
 
 #loader{
   position: absolute;
@@ -220,7 +221,7 @@ path, polyline{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 12vw;
+  padding: 7vw 12vw;
 }
 #workrow h1{
   font-size: 8vw;
@@ -254,12 +255,88 @@ path, polyline{
   width:105%;
   
 }
-#playground{
-  
+#timeline{
   width: 100%;
   height: 100vh;
-  
+  overflow: hidden;
+  position: relative;
+}
+#circle{
+  position:absolute;
+  left:-75vh;
+  top: 50%;
+  transform: translate(0%,-50% ) ;
+  border-radius: 50%;
+  width: 150vh;
+  height: 150vh;
+  border:2px solid #14ff16
+
+}
+.stripe{
+  width: 120vw;
+  height: 25vh;
+
+  top:38%;
+  left: 50%;
+  position:absolute;
+  transform: translate(0, 50%);
+  transform-origin: 0% 50%;
+  display: flex;
+
+}
+.str1{
+  transform: translate(0, 50%) rotate(-50deg);
+
+}
+.str2{
+  transform: translate(0, 50%) rotate(-25deg);
+
+}
+.str4{
+  transform: translate(0, 50%) rotate(25deg);
+
+}
+.str5{
+  transform: translate(0, 50%) rotate(50deg);
+
+}
+.first{
+  width: 50%;
+  height: 100%;
+ 
+}
+.sec{
+  width: 80%;
+  height: 100%;
+
+
 }
 
+.sec h1{
+  font-size: 5vw;
+}
+.sec h2{
+  font-size: 1.5vw;
+}
 
+#panel{
+  position: absolute;
+  
+  width: 5vw;
+  height: 30vh;
+  right: 3vh;
+  top:42%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.mncircle{
+  height: 2vw;
+  width: 2vw;
+  opacity: 0.1;
+  
+  border-radius: 50%;
+  background-color: #14ff16;
 
+}

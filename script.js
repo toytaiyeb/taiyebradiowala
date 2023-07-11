@@ -2,14 +2,42 @@
 // let crsr_b=document.querySelector("#cursor-b")
 
 // document.addEventListener("mousemove",function(dets){
-//     crsr.style.left=dets.x+"px"
-//     crsr.style.top=dets.y+"px"
+//     crsr.style.left=dets.scroll.x-10+"px"
+//     crsr.style.top=dets.scroll.y-10+"px"
 //     crsr_b.style.left=dets.x-100+"px"
 //     crsr_b.style.top=dets.y-100+"px"
-
+  
 // })
 
+let mncircles=document.querySelectorAll(".mncircle")
+let active=3 
 
+gsap.to(mncircles[active-1],{
+    opacity:.8
+}
+)
+mncircles.forEach(function(val,index){
+    val.addEventListener("click",function(){
+        gsap.to("#circle",{
+            rotate:(3-(index+1))*25,
+            
+        })
+        circleOpacity()
+        active=index
+        gsap.to(mncircles[active],{
+            opacity:.8
+            
+        })
+
+    }) 
+})
+
+function circleOpacity(){
+    gsap.to(mncircles,{
+        opacity:0.1,
+    })
+    
+}
 
 function revelToSpan(){ 
     document.querySelectorAll(".reveal")
@@ -69,6 +97,12 @@ tl
         duration:.5,
         ease:Expo.easeInOut
     })
+    // .to("#circle",{
+    //     rotate:0,
+        
+    //     ease:Expo.easeInOut,
+    //     duration :1.5
+    // })
 
 
 }
@@ -85,9 +119,7 @@ function svgAnimation(){
             ease:Expo.Circ,
             delay:4
         })
-    
-    
-    
+
     })
 }
 // function changeWords(){
