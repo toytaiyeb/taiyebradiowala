@@ -10,10 +10,16 @@
 // })
 
 let mncircles=document.querySelectorAll(".mncircle")
+let sec=document.querySelectorAll(".sec")
+
+
 let active=3 
 
 gsap.to(mncircles[active-1],{
-    opacity:.8
+    opacity:.9
+})
+gsap.to(sec[active-1],{
+    opacity:.9
 }
 )
 mncircles.forEach(function(val,index){
@@ -25,9 +31,16 @@ mncircles.forEach(function(val,index){
         circleOpacity()
         active=index
         gsap.to(mncircles[active],{
-            opacity:.8
+            opacity:.9
             
         })
+        gsap.to(sec[active],{
+            opacity:.9
+        }
+        )
+     
+    
+       
 
     }) 
 })
@@ -36,6 +49,11 @@ function circleOpacity(){
     gsap.to(mncircles,{
         opacity:0.1,
     })
+    gsap.to(sec[active-1],{
+        opacity:.1
+    }
+    )
+
     
 }
 
@@ -158,9 +176,60 @@ function locoInit(){
     });
 }
 
+function putSkillPercent(){
+    let box=document.querySelector('#box')
+    let elemh1=document.querySelectorAll('#box>div>h1')
+    let elemdiv=document.querySelectorAll('#box>div>div>div')
+    box.addEventListener("mouseover",function(){
+        for(let i=0;i<elemh1.length;i++){
+            let elemName=elemh1[i].innerHTML
+
+            if(elemName=="javascript"){
+                elemdiv[i].style.width="90%"
+
+            }
+            else if(elemName=="react"){
+                elemdiv[i].style.width="70%"
+
+            }
+            else if(elemName=="nodejs"){
+                elemdiv[i].style.width="55%"
+
+            }
+            else if(elemName=="mongodb"){
+                elemdiv[i].style.width="50%"
+
+            }
+            else if(elemName=="css/sass"){
+                elemdiv[i].style.width="95%"
+
+            }
+            else if(elemName=="java"){
+                elemdiv[i].style.width="80%"
+
+            }
+            else if(elemName=="3js"){
+                elemdiv[i].style.width="50%"
+
+            }
+            else if(elemName=="python"){
+                elemdiv[i].style.width="70%"
+
+            }
+
+        }    
+
+    })
+ 
+
+
+    
+}
+
 revelToSpan()
 loaderAnimation()
 svgAnimation()
 // changeWords()
 textSequence(0)
 locoInit()
+putSkillPercent()

@@ -42,7 +42,7 @@ html,body{
   filter: blur(130px);
 
 }
-*/ */
+*/ 
 
 #loader{
   position: absolute;
@@ -97,7 +97,7 @@ html,body{
   z-index: 3;
   overflow: hidden;
 }
-
+/* nav bar */
 #home #nav{
   display:flex;
   align-items: center;
@@ -110,8 +110,8 @@ html,body{
 #nav a{
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 300;
-  font-size: 12px;
+  font-weight:900 ;
+  font-size: 14px;
   color: rgba(255, 255, 255, 0.945);
   position: relative;
  
@@ -149,14 +149,15 @@ canvas{
 
 #home{
   
-  height: 400vh;
+  height: 600vh;
   width: 100%;
   color: rgba(255, 255, 255, 0.945);
   background-color: rgba(0, 0, 0, 0.911);
+ 
 }
 
 
-
+/* Main landing page */
 #mainhome{
   flex-direction: row;
   display: flex;
@@ -168,26 +169,23 @@ canvas{
   /* line-height: 1; */
   padding-right: 3vw;
   margin-top: 2vw;
+  height: 100vh;
   
 }
-#left{
+#mainhome #left{
   width: 56vw;
   height: 100vh;
   flex-direction: column;
   padding-left: 4vw;
-  
-  
-  
-
 }
-#right{
+#mainhome #right{
   width: 44vw;
   height: 100vh;
  
   
 }
 .rows h1{
-  font-size: 7vw;
+  font-size: 9vw;
   font-weight: 500;
   
   
@@ -195,7 +193,7 @@ canvas{
 
 .rows svg{
   padding-left: 8vw;
-  height: 14vw;
+  height: 17vw;
   padding-top: 1vw;
   padding-bottom: 1vw;
   
@@ -217,11 +215,18 @@ path, polyline{
   color: #8bfa8d;
 }
 
+
+
+
+
+
+
+/* Work page */
 #works #workrow{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 7vw 12vw;
+  padding: 7vw 7vw;
 }
 #workrow h1{
   font-size: 8vw;
@@ -255,6 +260,10 @@ path, polyline{
   width:105%;
   
 }
+
+
+
+/* Timeline and history */
 #timeline{
   width: 100%;
   height: 100vh;
@@ -308,6 +317,7 @@ path, polyline{
 .sec{
   width: 80%;
   height: 100%;
+  opacity: .1;
 
 
 }
@@ -339,4 +349,86 @@ path, polyline{
   border-radius: 50%;
   background-color: #14ff16;
 
+}
+
+/* my skills */
+
+#skills{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  
+}
+#skills span{
+  color: #14ff16;
+  font-family: 'lr';
+}
+
+#skillsliner{
+  height: 100%;
+  width: 50vw;
+  
+  border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+#skillsliner #box{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #14ff16;
+  padding: 3vw;
+  height: 80vh;
+  width: 45vw;
+  border-radius: 20%;
+  
+}
+
+#skillsliner #box #skillnames{
+  display: flex;
+  padding: .5vw;
+
+}
+
+#skillsliner #box #skillnames h1{
+  width:30%;
+  text-align: left;
+
+}
+
+#skillsliner #box #skillnames #skillpercent{
+  width:70%;
+  border: 5px solid rgba(255, 255, 255, 0.945); 
+  border-radius: 30%;
+  
+}
+#percentcolor{
+  width: 0;
+  background-color: #14ff16;
+  border-radius: 10%;
+  height:100%;
+}
+#aboutme{
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3vw;
+  font-size: 1.2vw;
+
+}
+.title{
+  font-size: 4vw;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  padding: 7vw 7vw;
+}
+.title svg{
+  margin-top: 3vw;
 }
