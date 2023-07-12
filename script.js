@@ -25,7 +25,7 @@ gsap.to(sec[active-1],{
 mncircles.forEach(function(val,index){
     val.addEventListener("click",function(){
         gsap.to("#circle",{
-            rotate:(3-(index+1))*25,
+            rotate:(3-(index+1))*30,
             
         })
         circleOpacity()
@@ -224,6 +224,9 @@ function putSkillPercent(){
 
 
     
+}
+function isMobile(){
+    return /Android|iPhone/i.test(navigator.userAgent)
 }
 
 revelToSpan()

@@ -12,6 +12,13 @@
       
 
 }
+@font-face {
+  font-family: 'elegant';
+  src: url("/elegant.ttf") format('woff');
+      
+
+}
+
 
 *{
   margin:0%;
@@ -49,7 +56,7 @@ html,body{
   width: 100%;
   height:100vh ;
   background-color:rgb(0, 0, 0);
-  color: rgba(255, 255, 255, 0.945);
+  color: rgb(255, 255, 255);
   z-index: 3;
 }
 #loader .reveal{
@@ -204,13 +211,13 @@ path, polyline{
  
   
 }
-.rows svg:hover path {
-  stroke: #8bfa8d;
+/* .rows svg:hover path {
+  stroke: rgb(147,84,255)
 }
 .rows svg:hover polyline{
-  stroke: #8bfa8d;
+  stroke: rgb(147,84,255)
   
-}
+} */
 .rows h1:hover h1{
   color: #8bfa8d;
 }
@@ -294,23 +301,23 @@ path, polyline{
 
 }
 .str1{
-  transform: translate(0, 50%) rotate(-50deg);
+  transform: translate(0, 50%) rotate(-60deg);
 
 }
 .str2{
-  transform: translate(0, 50%) rotate(-25deg);
+  transform: translate(0, 50%) rotate(-30deg);
 
 }
 .str4{
-  transform: translate(0, 50%) rotate(25deg);
+  transform: translate(0, 50%) rotate(30deg);
 
 }
 .str5{
-  transform: translate(0, 50%) rotate(50deg);
+  transform: translate(0, 50%) rotate(60deg);
 
 }
 .first{
-  width: 50%;
+  width: 40%;
   height: 100%;
  
 }
@@ -323,10 +330,15 @@ path, polyline{
 }
 
 .sec h1{
-  font-size: 5vw;
+  font-size: 3.2vw;
+  text-align: left;
+  display:inline-block;
+  padding-right: 20vw;
 }
 .sec h2{
-  font-size: 1.5vw;
+  padding-top: 5px;
+  font-size: 1.7vw;
+ 
 }
 
 #panel{
@@ -396,6 +408,8 @@ path, polyline{
 #skillsliner #box #skillnames h1{
   width:30%;
   text-align: left;
+  font-size: 1.7vw;
+  font-family: 'elegant';
 
 }
 
@@ -417,8 +431,9 @@ path, polyline{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3vw;
-  font-size: 1.2vw;
+  padding: 5vw;
+  font-size: 1vw;
+  
 
 }
 .title{
