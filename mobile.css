@@ -1,0 +1,57 @@
+@media only screen and (max-width: 768px) {
+    #home{
+        z-index: 2;
+    }
+
+    #loader .reveal{
+        font-size: 40px;
+        top: 42%;
+    }
+    #mainhome{
+        
+        flex-direction: column;
+        padding-top: 50px;
+        
+
+
+    }
+    #mainhome #left{
+
+        
+        height: 40vh;
+        width: 100vw;
+    }
+    #mainhome #right{
+        height: 60vh;
+        width: 100vw;
+
+    }
+    .rows h1{
+        font-size: 18vw;
+        
+        
+      }
+      #mainwords2{
+        padding-top: 20px;
+
+      }
+    .rows svg
+    {
+        height: 15vh;
+    }
+   
+    canvas{
+        z-index: 1;
+        padding: 0;
+    }
+    #home #nav{
+        height: 60px;
+        
+    }
+    #removenav{
+        display:none
+
+    }
+
+
+}
