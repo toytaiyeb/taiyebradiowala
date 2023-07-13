@@ -228,7 +228,15 @@ function putSkillPercent(){
 function isMobile(){
     return /Android|iPhone/i.test(navigator.userAgent)
 }
+function interchangeAboutMe(){
+    let firstelem=document.getElementById("skillsliner")
+    let secondelem=document.getElementById("aboutme")
+    let temp=''
+    temp=firstelem
+    firstelem=secondelem
+    secondelem=temp
 
+}
 revelToSpan()
 loaderAnimation()
 svgAnimation()
@@ -236,3 +244,6 @@ svgAnimation()
 textSequence(0)
 locoInit()
 putSkillPercent()
+if(isMobile()){
+    interchangeAboutMe()
+}

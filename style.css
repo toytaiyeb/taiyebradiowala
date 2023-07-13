@@ -379,6 +379,7 @@ path, polyline{
   height: 100%;
   width: 50vw;
   
+  
   border-radius: 20%;
   display: flex;
   justify-content: center;
@@ -430,7 +431,8 @@ path, polyline{
   justify-content: center;
   align-items: center;
   padding: 5vw;
-  font-size: 1vw;
+  font-size: 1.2vw;
+  letter-spacing: 1.5px;
   
 
 }
@@ -441,6 +443,7 @@ path, polyline{
   justify-content: space-between;
   align-items: space-between;
   padding: 7vw 7vw;
+  letter-spacing: 1px;
 }
 .title svg{
   margin-top: 3vw;

@@ -15,7 +15,7 @@ function threeJs()
     //Create a Three.JS Scene
 const scene = new THREE.Scene();
 //create a new camera with positions and angles
-const camera = new THREE.PerspectiveCamera(80, window.innerWidth / window.innerHeight, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera(100, window.innerWidth / window.innerHeight, 0.1, 1000);
 camera.position.x +=11;
 camera.position.y +=20;
 
@@ -44,7 +44,7 @@ loader.load(
     object = gltf.scene;
     //If the file is loaded, add it to the scene
     gltf.scene.scale.set(4.5,4.5,4.5)
-    object.position.y+=3
+    object.position.y+=9
     object.position.x+=4
     scene.add(gltf.scene);
     object.rotation.y+= 11;
@@ -66,7 +66,7 @@ loader.load(
 
 //Instantiate a new renderer and set its size
 const renderer = new THREE.WebGLRenderer({ alpha: true }); //Alpha: true allows for the transparent background
-renderer.setSize(window.innerWidth/2, window.innerHeight/2);
+renderer.setSize(window.innerWidth/1, window.innerHeight/1);
 
 //Add the renderer to the DOM
 document.getElementById("container3D").appendChild(renderer.domElement);
@@ -91,6 +91,8 @@ if (objToRender === "rcomputerm") {
 // to disable pan
  controls.enablePan = false;
  controls.touches.ONE=false
+ // you can easily disable it by using
+controls.enabled = false;
  
 
 }
@@ -116,7 +118,7 @@ window.addEventListener("resize", function () {
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
   
-  renderer.setSize(window.innerWidth/2, window.innerHeight/2);
+  renderer.setSize(window.innerWidth/1, window.innerHeight/1);
 });
 
 //add mouse position listener, so we can make the eye move

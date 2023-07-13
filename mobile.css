@@ -52,6 +52,59 @@
         display:none
 
     }
+    .title{
+        font-size: 6vw;
+        padding-top: 20px;
+        
+    }
+    .title h1{
+        padding-top: 10px;
+    }
+    .title svg{
+        height: 30px;
 
+    }
+    #skills{
+        flex-direction: column;
+        height: 130vh;
+        
+    }
+    #skillsliner{
+        
+        width: 100%;
 
+    }
+    #skillsliner #box{
+        height: 50vh;
+        width: 100%;
+        justify-content: center;
+    }
+    #skillsliner #box #skillnames h1{
+        width:30%;
+        font-size: 17px;
+    }
+    #aboutme{
+        height: 70vh;
+        width: 100%;
+        font-size: 13px;
+        padding-top: 55px;
+        text-align: left;
+        letter-spacing: 1px;
+        }
+        #workrow h1{
+            font-size: 40px;
+            font-weight: 600;
+            padding-top: 20px;
+          }
+          #workrow svg{
+            height: 30px;
+
+          }
+    #mini{
+        font-size: 20px;
+    }
 }
+        
+
+
+
