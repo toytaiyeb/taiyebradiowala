@@ -8,7 +8,15 @@
 //     crsr_b.style.top=dets.y-100+"px"
   
 // })
-
+var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 4){
+        counter = 1;
+      }
+    }, 5000);
+    
 let mncircles=document.querySelectorAll(".mncircle")
 let sec=document.querySelectorAll(".sec")
 
@@ -237,6 +245,36 @@ function interchangeAboutMe(){
     secondelem=temp
 
 }
+function cursorMove(){
+    let cursorAnimation= document.querySelector(".cursor")
+    let cursors = document.querySelectorAll(".cursor")
+    document.addEventListener("click", (e)=>{
+    let x = e.clientX;
+    let y = e.clientY;
+    
+    cursorAnimation.style.top = y + "px"
+    cursorAnimation.style.left = x + "px"
+
+    cursors.forEach((cursor)=>{
+    cursor.classList.add("active");
+    function removeCursorActive(){
+    cursor.classList.remove("active");
+    }
+    setTmeout(removeCursorActlve, 1000);
+    })
+    let cursorClone = cursorAnimation.cloneNode(true)
+    document.querySelector("body").appendChild(cursorClone);
+    setTimeout(()=> {
+    cursorClone.remove();
+    },1000)
+})
+
+}
+
+
+
+
+
 revelToSpan()
 loaderAnimation()
 svgAnimation()
