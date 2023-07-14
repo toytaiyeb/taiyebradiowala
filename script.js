@@ -8,15 +8,8 @@
 //     crsr_b.style.top=dets.y-100+"px"
   
 // })
-var counter = 1;
-    setInterval(function(){
-      document.getElementById('radio' + counter).checked = true;
-      counter++;
-      if(counter > 4){
-        counter = 1;
-      }
-    }, 5000);
-    
+
+
 let mncircles=document.querySelectorAll(".mncircle")
 let sec=document.querySelectorAll(".sec")
 
