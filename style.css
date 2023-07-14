@@ -157,7 +157,7 @@ canvas{
 
 #home{
   
-  height: 900vh;
+  height: 1090vh;
   width: 100%;
   color: rgba(255, 255, 255, 0.945);
   background-color: rgba(0, 0, 0, 0.911);
@@ -251,22 +251,31 @@ path, polyline{
 #images{
  
   width: 100%;
-  position: relative;
+  flex-direction: column;
+  
   padding: 4vw 2vw;
   display: flex;
   justify-items: center;
   align-items: center;
   
 }
+#images h1{
+  font-size: 2vw;
+  padding: 2vw 12vw;
+}
+#images h1 span{
+  font-family: 'lr';
+  color: #14ff16;
+}
 #cnt{
   
   width:70%;
   overflow: hidden;
-  height: 90vh;
+  height: 100vh;
   border-radius: 50px;
 }
 #cnt img{
-  width:105%;
+  width:100%;
   
 }
 
@@ -291,7 +300,7 @@ path, polyline{
 
 }
 .stripe{
-  width: 120vw;
+  width: 160vw;
   height: 25vh;
 
   top:38%;
@@ -359,7 +368,6 @@ path, polyline{
   height: 2vw;
   width: 2vw;
   opacity: 0.1;
-  
   border-radius: 50%;
   background-color: #14ff16;
 
@@ -457,4 +465,5 @@ footer{
   height: 40px;
   font-size: 3vw;
   display: inline-block;
+  font-size: 1vw;
 }

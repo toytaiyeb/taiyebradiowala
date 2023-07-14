@@ -1,6 +1,7 @@
 @media only screen and (max-width: 768px) {
     #home{
         z-index: 2;
+        height: 550vh;
     }
 
     #loader .reveal{
@@ -102,6 +103,47 @@
           }
     #mini{
         font-size: 20px;
+    }
+    #works #images{
+        width: 100%;
+        
+
+    }
+    #cnt{
+        width: 100%;
+        height: 100%;
+    }
+    #images h1{
+
+        padding: 2.5vw;
+        font-size: 12px;
+    }
+
+    #circle{
+        width: 150vh;
+        height: 100vh;
+        left:-88vh;
+        top:60%
+        
+    }
+    .sec h1{
+        font-size: 30px;
+
+    }
+    .sec h2{
+        font-size: 15px;
+    }
+    .sec{
+        opacity: 0;
+        
+    }
+    .str5{
+        padding-right: 230px;
+        
+    }
+    .str4{
+        padding-right: 200px;
+        padding-top: 0;
     }
     
 }

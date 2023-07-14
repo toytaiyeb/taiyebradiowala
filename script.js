@@ -27,18 +27,22 @@ mncircles.forEach(function(val,index){
     val.addEventListener("click",function(){
         gsap.to("#circle",{
             rotate:(3-(index+1))*30,
-            
         })
         circleOpacity()
+        
         active=index
         gsap.to(mncircles[active],{
             opacity:.9
             
         })
+        
+
         gsap.to(sec[active],{
             opacity:.9
         }
         )
+        
+
      
     
        
@@ -50,10 +54,20 @@ function circleOpacity(){
     gsap.to(mncircles,{
         opacity:0.1,
     })
-    gsap.to(sec[active-1],{
-        opacity:.1
+    if(isMobile()){
+    gsap.to(sec[active],{
+        opacity:0
     }
     )
+  }
+  else{
+
+        gsap.to(sec[active],{
+            opacity:.1
+        }
+        )
+
+  }
 
     
 }

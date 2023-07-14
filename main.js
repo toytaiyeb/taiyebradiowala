@@ -101,9 +101,9 @@ controls.enabled = false;
 function animate() {
   requestAnimationFrame(animate);
   //Here we could add some code to update the scene, adding some automatic movement
-  object.rotation.x += 0.03;
-  object.rotation.y += 0.03;
-  object.rotation.z += 0.03;
+  object.rotation.x += 0.02;
+  object.rotation.y += 0.02;
+  object.rotation.z += 0.02;
   //Make the computer move
   if (object && objToRender === "rcomputerm") {
     //I've played with the constants here until it looked good 
@@ -214,9 +214,9 @@ if (objToRender === "rcomputerm") {
 function animate() {
   requestAnimationFrame(animate);
   //Here we could add some code to update the scene, adding some automatic movement
-  object.rotation.x += 0.01;
-  object.rotation.y += 0.01;
-  object.rotation.z += 0.01;
+  object.rotation.x += 0.02;
+  object.rotation.y += 0.02;
+  object.rotation.z += 0.02;
   //Make the computer move
   if (object && objToRender === "rcomputerm") {
     //I've played with the constants here until it looked good 
