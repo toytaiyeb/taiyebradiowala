@@ -277,7 +277,13 @@ function cursorMove(){
 })
 
 }
-
+ function playMusic(){
+    document.addEventListener("mousemove", event => {
+        const audio = document.querySelector("audio");
+        audio.volume = 0.35;
+        audio.play();
+      });
+ }
 
 
 
@@ -289,6 +295,7 @@ svgAnimation()
 textSequence(0)
 locoInit()
 putSkillPercent()
+playMusic()
 if(isMobile()){
     interchangeAboutMe()
 }

@@ -2,7 +2,7 @@
    
     #home{
         z-index: 2;
-        height: 560vh;
+        height: 600vh;
     }
 
     #loader .reveal{
@@ -60,7 +60,9 @@
         
     }
     .title h1{
-        padding-top: 10px;
+        padding-top: 30px;
+        letter-spacing: 2px;
+        
     }
     .title svg{
         height: 30px;
@@ -88,10 +90,11 @@
     #aboutme{
         height: 70vh;
         width: 100%;
-        font-size: 13px;
+        font-size: 11px;
         padding-top: 55px;
-        text-align: left;
-        letter-spacing: 1px;
+        text-align: center;
+        letter-spacing: 3px;
+        padding-bottom: 55px;
         }
         #workrow h1{
             font-size: 40px;
@@ -117,7 +120,7 @@
     }
     #images h1{
         
-        letter-spacing:1px ;
+        letter-spacing:3px ;
         padding: 2.5vw;
         font-size: 12px;
     }
@@ -155,12 +158,14 @@
         padding-top: 0;
     }
     footer{
+       
         font-size: 6px;
         flex-direction: column;
     }
     .email{
         padding-top: 5px;
         font-size: 20px;
+        color: rgba(255, 255, 255, 0.945);
 
     }
     
