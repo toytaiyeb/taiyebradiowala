@@ -39,7 +39,7 @@ const loader = new GLTFLoader();
 
 //Load the file
 loader.load(
-  `models/${objToRender}/scene.gltf`,
+  `/${objToRender}/scene.gltf`,
   function (gltf) {
     object = gltf.scene;
     //If the file is loaded, add it to the scene
