@@ -101,12 +101,13 @@ controls.enabled = false;
 function animate() {
   requestAnimationFrame(animate);
   //Here we could add some code to update the scene, adding some automatic movement
-  object.rotation.x += 0.02;
-  object.rotation.y += 0.02;
-  object.rotation.z += 0.02;
+
   //Make the computer move
   if (object && objToRender === "rcomputerm") {
     //I've played with the constants here until it looked good 
+    object.rotation.x += 0.03;
+    object.rotation.y += 0.03;
+    object.rotation.z += 0.03;
     object.rotation.y = -3 + mouseX / window.innerWidth * 3;
     object.rotation.x = -1.2 + mouseY * 2.5 / window.innerHeight;
   }
@@ -147,7 +148,7 @@ let mouseY = window.innerHeight / 2;
 
 //Keep the 3D object on a global variable so we can access it later
 
-let object=''
+var object;
 //OrbitControls allow the camera to move around the scene
 let controls;
 
@@ -212,19 +213,24 @@ if (objToRender === "rcomputerm") {
 
 //Render the scene
 function animate() {
-  
   requestAnimationFrame(animate);
+  
+  
   //Here we could add some code to update the scene, adding some automatic movement
-  object.rotation.x += 0.02;
-  object.rotation.y += 0.02;
-  object.rotation.z += 0.02;
+
+
+  
   //Make the computer move
   if (object && objToRender === "rcomputerm") {
+    object.rotation.x += 0.02;
+    object.rotation.y += 0.02;
+    object.rotation.z += 0.02;
     //I've played with the constants here until it looked good 
     object.rotation.y = -3 + mouseX / window.innerWidth * 3;
     object.rotation.x = -1.2 + mouseY * 2.5 / window.innerHeight;
   }
   renderer.render(scene, camera);
+  
 }
 
 //Add a listener to the window, so we can resize the window and the camera
