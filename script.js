@@ -148,7 +148,7 @@ function svgAnimation(){
         
         gsap.to("#Visual>g>g>path, #Visual>g>g>polyline",{
             strokeDashoffset:0,
-            duration:4.5,
+            duration:6.5,
             ease:Expo.Circ,
             delay:4
         })
@@ -212,7 +212,7 @@ function putSkillPercent(){
 
             }
             else if(elemName=="mongodb"){
-                elemdiv[i].style.width="50%"
+                elemdiv[i].style.width="60%"
 
             }
             else if(elemName=="css/sass"){
@@ -223,8 +223,8 @@ function putSkillPercent(){
                 elemdiv[i].style.width="80%"
 
             }
-            else if(elemName=="3js"){
-                elemdiv[i].style.width="50%"
+            else if(elemName=="3js/gsap"){
+                elemdiv[i].style.width="60%"
 
             }
             else if(elemName=="python"){

@@ -107,7 +107,7 @@ function animate() {
     //I've played with the constants here until it looked good 
     object.rotation.x += 0.03;
     object.rotation.y += 0.03;
-    object.rotation.z += 0.03;
+    object.rotation.z += 0.03 ;
     object.rotation.y = -3 + mouseX / window.innerWidth * 3;
     object.rotation.x = -1.2 + mouseY * 2.5 / window.innerHeight;
   }

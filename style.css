@@ -115,6 +115,7 @@ html,body{
   height: 100px;
   
 }
+
 #nav a{
   text-decoration: none;
   text-transform: uppercase;
@@ -455,7 +456,7 @@ path, polyline{
   display: flex;
   justify-content: space-between;
   align-items: space-between;
-  padding: 7vw 7vw;
+  padding: 5vw 7vw;
   letter-spacing: 1px;
 }
 .title svg{
@@ -467,4 +468,7 @@ footer{
   font-size: 3vw;
   display: inline-block;
   font-size: 1vw;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
 }
