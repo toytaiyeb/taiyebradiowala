@@ -146,8 +146,8 @@ let mouseX = window.innerWidth / 2;
 let mouseY = window.innerHeight / 2;
 
 //Keep the 3D object on a global variable so we can access it later
-let object;
 
+let object=''
 //OrbitControls allow the camera to move around the scene
 let controls;
 
@@ -212,6 +212,7 @@ if (objToRender === "rcomputerm") {
 
 //Render the scene
 function animate() {
+  
   requestAnimationFrame(animate);
   //Here we could add some code to update the scene, adding some automatic movement
   object.rotation.x += 0.02;

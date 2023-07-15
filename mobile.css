@@ -1,7 +1,7 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     #home{
         z-index: 2;
-        height: 550vh;
+        height: 560vh;
     }
 
     #loader .reveal{
@@ -137,6 +137,12 @@
         opacity: 0;
         
     }
+    .str1{
+        padding-left: 90px;
+    }
+    .str2{
+        padding-left: 40px;
+    }
     .str5{
         padding-right: 230px;
         
@@ -144,6 +150,9 @@
     .str4{
         padding-right: 200px;
         padding-top: 0;
+    }
+    footer{
+        font-size: 6px;
     }
     
 }
