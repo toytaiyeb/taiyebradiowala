@@ -156,6 +156,12 @@
     }
     footer{
         font-size: 6px;
+        flex-direction: column;
+    }
+    .email{
+        padding-top: 5px;
+        font-size: 20px;
+
     }
     
 }
