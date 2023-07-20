@@ -199,7 +199,7 @@ function putSkillPercent(){
         for(let i=0;i<elemh1.length;i++){
             let elemName=elemh1[i].innerHTML
 
-            if(elemName=="javascript"){
+            if(elemName=="typescript"){
                 elemdiv[i].style.width="90%"
 
             }
