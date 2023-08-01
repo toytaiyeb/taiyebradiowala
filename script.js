@@ -203,7 +203,7 @@ function putSkillPercent(){
                 elemdiv[i].style.width="90%"
 
             }
-            else if(elemName=="react"){
+            else if(elemName=="nextjs"){
                 elemdiv[i].style.width="70%"
 
             }

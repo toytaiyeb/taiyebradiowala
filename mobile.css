@@ -2,7 +2,7 @@
    
     #home{
         z-index: 2;
-        height: 600vh;
+        height: 590vh;
     }
 
     #loader .reveal{
@@ -60,7 +60,7 @@
         
     }
     .title h1{
-        padding-top: 30px;
+        padding-top: 10PX;
         letter-spacing: 2px;
         
     }
@@ -92,9 +92,15 @@
         width: 100%;
         font-size: 11px;
         padding-top: 55px;
-        text-align: center;
-        letter-spacing: 3px;
-        padding-bottom: 55px;
+        
+       
+        
+        }
+        #aboutme h1{
+            font-family: 'Lato', sans-serif;
+            text-align: left;
+            letter-spacing: 1px;
+           
         }
         #workrow h1{
             font-size: 40px;
@@ -120,9 +126,10 @@
     }
     #images h1{
         
-        letter-spacing:3px ;
+       
         padding: 2.5vw;
-        font-size: 12px;
+        font-size: 15px;
+        font-family: 'Lato', sans-serif;
     }
 
     #circle{
