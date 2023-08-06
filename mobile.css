@@ -22,8 +22,10 @@
         
         height: 40vh;
         width: 100vw;
+        padding-bottom: 0;
     }
     #mainhome #right{
+        margin-top: 0;
         height: 60vh;
         width: 100vw;
 
@@ -45,6 +47,7 @@
     canvas{
         z-index: 1;
         padding: 0;
+
     }
     #home #nav{
         height: 60px;

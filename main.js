@@ -43,9 +43,9 @@ loader.load(
   function (gltf) {
     object = gltf.scene;
     //If the file is loaded, add it to the scene
-    gltf.scene.scale.set(4.5,4.5,4.5)
-    object.position.y+=9
-    object.position.x+=4
+    gltf.scene.scale.set(2,2,2)
+    object.position.y+=14
+    object.position.x+=2
     scene.add(gltf.scene);
     object.rotation.y+= 11;
     // object.rotation.z+= 11;
