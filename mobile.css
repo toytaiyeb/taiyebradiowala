@@ -101,8 +101,9 @@
         }
         #aboutme h1{
             font-family: 'Lato', sans-serif;
-            text-align: left;
-            letter-spacing: 1px;
+            text-align: center;
+            letter-spacing: 2.4px;
+            text-transform: uppercase;
            
         }
         #workrow h1{

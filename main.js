@@ -45,7 +45,7 @@ loader.load(
     //If the file is loaded, add it to the scene
     gltf.scene.scale.set(2,2,2)
     object.position.y+=14
-    object.position.x+=2
+    object.position.x+=1.4
     scene.add(gltf.scene);
     object.rotation.y+= 11;
     // object.rotation.z+= 11;
@@ -91,7 +91,7 @@ if (objToRender === "rcomputerm") {
 // to disable pan
  controls.enablePan = false;
  controls.touches.ONE=false
- // you can easily disable it by using
+//  // you can easily disable it by using
 controls.enabled = false;
  
 
