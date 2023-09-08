@@ -100,7 +100,7 @@
         
         }
         #aboutme h1{
-            font-family: 'Lato', sans-serif;
+            font-family: 'Lato';
             text-align: center;
             letter-spacing: 2.4px;
             text-transform: uppercase;
@@ -133,7 +133,7 @@
        
         padding: 2.5vw;
         font-size: 15px;
-        font-family: 'Lato', sans-serif;
+        font-family: 'Lato';
     }
 
     #circle{
