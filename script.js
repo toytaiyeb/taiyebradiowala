@@ -1,14 +1,3 @@
-// let crsr=document.querySelector("#cursor")
-// let crsr_b=document.querySelector("#cursor-b")
-
-// document.addEventListener("mousemove",function(dets){
-//     crsr.style.left=dets.scroll.x-10+"px"
-//     crsr.style.top=dets.scroll.y-10+"px"
-//     crsr_b.style.left=dets.x-100+"px"
-//     crsr_b.style.top=dets.y-100+"px"
-  
-// })
-
 
 let mncircles=document.querySelectorAll(".mncircle")
 let sec=document.querySelectorAll(".sec")
@@ -95,7 +84,7 @@ function loaderAnimation(){
     var tl=gsap.timeline();
 
 tl
-  
+    
     .to("#loader .parent .child",{
         y:"-100%",
         duration:1.5,
@@ -130,12 +119,6 @@ tl
         duration:.5,
         ease:Expo.easeInOut
     })
-    // .to("#circle",{
-    //     rotate:0,
-        
-    //     ease:Expo.easeInOut,
-    //     duration :1.5
-    // })
 
 
 }
@@ -155,16 +138,6 @@ function svgAnimation(){
 
     })
 }
-// function changeWords(){
-//     let word=document.getElementById("mainwords2")
-    
-//     for(var i=0;i<arr.length;i++){
-
-//         word.innerHTML=""
-//         word.innerHTML=arr[i]
-
-//     }
-// }
 
 let arr=["Developer","Designer","Builder","Dreamer",]
 
@@ -291,7 +264,6 @@ function cursorMove(){
 revelToSpan()
 loaderAnimation()
 svgAnimation()
-// changeWords()
 textSequence(0)
 locoInit()
 putSkillPercent()
