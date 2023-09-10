@@ -253,12 +253,40 @@ function cursorMove(){
  function playMusic(){
     document.addEventListener("mousemove", event => {
         const audio = document.querySelector("audio");
-        audio.volume = 0.35;
+        audio.volume = 0.3;
         audio.play();
       });
  }
+function toggleMusic(){
+    // Get a reference to the volume icon image element
+const volumeIcon = document.getElementById("volume-icon");
+
+// Set a flag to keep track of the state (muted or not)
+let isMuted = true;
+const audio = document.querySelector("audio");
+// Function to toggle the volume icon
+function toggleVolumeIcon() {
+  if (isMuted) {
+
+    audio.muted = true;
+    audio.pause(); // Pause the audio
+    volumeIcon.src = "./volume-mute.svg"; // Change the source to the muted icon
+  } else {
+    audio.muted = false;
+    audio.play(); // Play the audio
+    volumeIcon.src = "./volume-high.svg"; // Change the source to the unmuted icon
+  }
+  
+  // Toggle the state
+  isMuted = !isMuted;
+}
+
+// Add a click event listener to the volume button
+const volumeButton = document.querySelector(".volume");
+volumeButton.addEventListener("click", toggleVolumeIcon);
 
 
+}
 
 
 revelToSpan()
@@ -268,6 +296,9 @@ textSequence(0)
 locoInit()
 putSkillPercent()
 playMusic()
+toggleMusic()
 if(isMobile()){
     interchangeAboutMe()
+    
+    
 }

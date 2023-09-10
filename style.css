@@ -144,6 +144,24 @@ embed{
   
 }
 
+.nav-right {
+  display: flex;
+  align-items: center; /* Vertical alignment */
+}
+
+/* Style the volume button */
+.volume {
+  width: 30px;
+  height: 25px;
+  border: none;
+  cursor: pointer;
+  margin-right: 20px; /* Adjust the margin as needed for spacing */
+  border-radius: 30%;;
+}
+.volume:hover {
+  transform: scale(1.2); /* Adjust the scale factor as desired */
+}
+
 #container3D {
   display: flex; 
   justify-content: center;
